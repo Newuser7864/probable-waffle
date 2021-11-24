@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="google" content="notranslate" /> 
+		<title>Holiday Token Calculator</title>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+  <body>
+      <div class="container-fluid bg-primary text-light text-center">
+          <div class="row">
+              <div class="col-md-12">
+                  <h1>Holiday Token Calculator</h1>
+              </div>
+          </div>
+      </div>
+    <div class="container">
+        <div class="row text-center mb-2">
+            <div class="col-md-3">
+                <label for="yourQty">Number of Holiday Token you own</label>
+                <input type="text" step="1" class="form-control" id="yourQty" />
+                <div class="qtyOptions bg-primary text-light mr-3 p-1">
+                    <div>Enter a value above or select an option below <span class="text-danger closeQty">X</span></div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="1,000,000">1 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="10,000,000">10 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="100,000,000">100 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="250,000,000">250 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="500,000,000">500 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="1,000,000,000">1 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="2,000,000,000">2 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="3,000,000,000">3 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="4,000,000,000">4 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="5,000,000,000">5 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="10,000,000,000">10 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="25,000,000,000">25 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="50,000,000,000">50 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="100,000,000,000">100 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="250,000,000,000">250 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="500,000,000,000">500 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="750,000,000,000">750 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="yourQty" data-qty="1,000,000,000,000">1 Trillion</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="dailyVolume">Daily Volume</label>
+                <input type="text" step="1" class="form-control" id="dailyVolume" />
+                <div class="qtyOptions bg-primary text-light mr-3 p-1">
+                    <div>Enter a value above or select an option below <span class="text-danger closeQty">X</span></div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="1,000,000">1 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="2,000,000">2 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="3,000,000">3 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="5,000,000">5 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="7,500,000">7.5 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="10,000,000">10 Million</div>
+		    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="25,000,000">25 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="50,000,000">50 Million</div>
+		    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="100,000,000">100 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="250,000,000">250 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="500,000,000">500 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="1,000,000,000">1 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="2,000,000,000">2 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="3,000,000,000">3 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="4,000,000,000">4 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="dailyVolume" data-qty="5,000,000,000">5 Billion</div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="circulatingSupply">Circulating Supply</label>
+                <input type="text" class="form-control" id="circulatingSupply" value="285,000,000,000,000" />
+                <div class="qtyOptions bg-primary text-light mr-3 p-1">
+                    <div>Enter a value above or select an option below <span class="text-danger closeQty">X</span></div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="285,000,000,000,000">Current (~285 Trillion)</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="250,000,000,000,000">250 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="200,000,000,000,000">200 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="150,000,000,000,000">150 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="100,000,000,000,000">100 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="75,000,000,000,000">75 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="50,000,000,000,000">50 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="35,000,000,000,000">35 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="25,000,000,000,000">25 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="10,000,000,000,000">10 Trillion</div>
+                    <div class="ownQtyOption selectOption" data-id="circulatingSupply" data-qty="1,000,000,000,000">1 Trillion</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="">Market Cap</label>
+                <input type="text" class="form-control" id="marketCap" />
+                <div class="qtyOptions bg-primary text-light mr-3 p-1">
+                    <div>Enter a value above or select an option below <span class="text-danger closeQty">X</span></div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="250,000,000">250 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="500,000,000">500 Million</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="1,000,000,000">1 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="5,000,000,000">5 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="10,000,000,000">10 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="25,000,000,000">25 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="50,000,000,000">50 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="75,000,000,000">75 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="100,000,000,000">100 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="250,000,000,000">250 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="350,000,000,000">350 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="400,000,000,000">400 Billion</div>
+                    <div class="ownQtyOption selectOption" data-id="marketCap" data-qty="500,000,000,000">500 Billion</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-4 text-right">
+                <button class="btn btn-success btn-block" id="calc" type="button">Show Me The Money!</button>
+            </div>
+        </div>
+
+        <div class="row" id="results">
+            <div class="col-md-4 p-3">
+                <div class=" border border-success p-3 text-center">
+                    <h3>Daily Rewards</h3>
+                    <h2 class="text-success">$<span id="dailyReflections"></span></h2>
+                </div> 
+            </div>
+
+            <div class="col-md-4 p-3">
+                <div class=" border border-success p-3 text-center">
+                    <h3>Monthly Rewards</h3>
+                    <h2 class="text-success">$<span id="monthlyReflections"></span></h2>
+                </div>
+            </div>
+
+            <div class="col-md-4 p-3">
+                <div class=" border border-success p-3 text-center">
+                    <h3>Yearly Rewards</h3>
+                    <h2 class="text-success">$<span id="yearlyReflections"></span></h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 p-3">
+                <div class=" border border-success p-3 text-center">
+                    <h3>Price</h3>
+                    <h2 class="text-success">$<span id="price"></span></h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 p-3">
+                <div class=" border border-success p-3 text-center">
+                    <h3>Total Value</h3>
+                    <h2 class="text-success">$<span id="totalValue"></span></h2>
+                </div>
+            </div>
+        </div>
+
+ 
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bg-primary text-light text-center mb-2 p-3">
+                <h2>Instructions</h2>
+            </div>
+            <div class="col-md-12 text-center">
+                <p>Use this page to calculate your Rewards and Price based on the volume and market cap you supply. Number of Holiday Tokens you own, Volume and circulating supply must be entered to show the daily, monthly and yearly rewards.  If you enter a value in market cap it will return the price and total value for the number of tokens you hold.</p>
+                <p>When entering values you may use commas, but no currency symbols - numbers only.</p>
+	     </div>
+                <p>This website is not affiliated nor endoresed by Holiday Token and does not constitute financial advise. Do your own research and invest accordingly. Please note that the values here are approximate based on the contract data for Holiday Token.</p>
+            </div>
+            <div class="col-md-12 bg-primary text-light text-center mb-2 p-3">
+                <h2>Helpful Links</h2>
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li><a href="https://holidaytoken.finance/" target="_blank">Official Website</a></li>
+                    <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x7b8656c95944f1d6e2e6deadedd0392a4138d8dd" target="_blank">Pancake Swap Info page</a></li>
+                    <li>Price Chart on <a href="https://www.coingecko.com/en/coins/holiday-token" target="_blank">Coin Gecko</a>.</li>
+                    <li>Price Chart on <a href="https://poocoin.app/tokens/0x7b8656c95944f1d6e2e6deadedd0392a4138d8dd" target="_blank">poocoin.app</a>.</li>
+                    <li>Price Chart on <a href="https://coinmarketcap.com/currencies/holiday-token/">coinmarketcap.com</a>.</li>
+                    <li><a href="https://bscscan.com/token/0x7b8656c95944f1d6e2e6deadedd0392a4138d8dd#balances" target="_blank">View on BSC Scan</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+    <style>
+        .qtyOptions {
+            position:absolute;
+            z-index:100;
+            display:none;
+        }
+
+        .text-danger.closeQty {
+            position: absolute;
+            top: -32px;
+            right: 5px;
+            border: 1px solid #e74c3c;
+            padding: 1px 3px;
+        }
+    </style>
+      <script>
+          usd = new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+          usd8 = new Intl.NumberFormat('en-US', { minimumFractionDigits: 8, maximumFractionDigits: 8 });
+          $("input").click(function(){
+              $(".qtyOptions").hide();
+            $(this).siblings("div").show();
+          });
+
+          $("input").change(function(){
+            $(this).siblings("div").hide();
+          });
+
+          $(".selectOption").click(function(){
+            var value = $(this).data("qty");
+            var optionID = $(this).data("id");
+            $("#"+ optionID).val(value);
+            $(this).parent("div").hide();
+          });
+
+          $("button#calc").click(function () {
+              $(".qtyOptions").hide();
+              //Get the inputs, remove commas and convert to floats for calculations
+              var yourQty = $('#yourQty').val();
+              yourQty = parseFloat(yourQty.replace(/\,/g, ''));
+
+              var dailyVolume = $('#dailyVolume').val();
+              dailyVolume = parseFloat(dailyVolume.replace(/\,/g, ''));
+
+              var circulatingSupply = $('#circulatingSupply').val();
+              if ($('#incExempt').is(':checked')) {
+                  circulatingSupply = parseFloat(circulatingSupply.replace(/\,/g, '')) - 50000000000000 - 6754913585278;
+              } else {
+                  circulatingSupply = parseFloat(circulatingSupply.replace(/\,/g, ''));
+              }
+
+                  var marketCap = $('#marketCap').val();
+              marketCap = parseFloat(marketCap.replace(/\,/g, ''));
+
+              //Calculate the totals
+              var price = marketCap / circulatingSupply;
+              var yourPct = yourQty / circulatingSupply;
+              var yourDailyReflections = dailyVolume * .08 * yourPct;
+              var yourMonthlyReflections = yourDailyReflections * 365 / 12;
+              var yourYearlyReflections = yourMonthlyReflections * 12;
+              var totalValue = yourQty * price;
+
+              //Update the page with the calculated totals
+              $('#dailyReflections').html(usd.format(yourDailyReflections));
+              $('#monthlyReflections').html(usd.format(yourMonthlyReflections));
+              $('#yearlyReflections').html(usd.format(yourYearlyReflections));
+              $('#price').html(usd8.format(price));
+              $('#totalValue').html(usd.format(totalValue));
+          });
+
+          $(".closeQty").click(function(){
+            $(".qtyOptions").hide();
+          });
+
+          function limitDigits(number,digits) {
+              return Math.round(number * Math.pow(10, digits)) / Math.pow(10, digits)
+          }
+      </script>
+  </body>
+</html>
